@@ -1,0 +1,492 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    [class*="col-"] {
+        text-align: justify;
+    }
+    
+    .site-container {
+        display: block;
+        align-items: center;
+    }
+    
+    body {
+        font-family: Tahoma, Helvetica, 'Trebuchet MS', sans-serif;
+    }
+    
+    .banner {
+        max-width: 100%;
+        height: auto;
+        margin-left: 300px;
+    }
+    
+    h2,
+    h3,
+    h4 {
+        margin: auto;
+        padding: 0.5em;
+        font-weight: bold;
+    }
+    
+    .about {
+        padding: 15px;
+        width: 100%;
+        color: rgb(77, 68, 68);
+        border: 1px dotted;
+        display: inline-block;
+        text-align: center;
+        margin-left: 270px;
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(116, 114, 117);
+    }
+    
+    .icon-site {
+        color: rgb(116, 114, 117);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .icon-site:hover {
+        color: rgb(79, 73, 82);
+        font-size: 22px;
+        ;
+    }
+    
+    .text {
+        margin: auto;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    table {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    td {
+        background-color: white;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .red {
+        background-color: red;
+    }
+    
+    .yellow {
+        background-color: yellow;
+    }
+    
+    .blue {
+        background-color: blue;
+    }
+    
+    .green {
+        background-color: green;
+    }
+    
+    .purple {
+        background-color: purple;
+    }
+    
+    .orange {
+        background-color: orange;
+    }
+    
+    footer {
+        background-color: #777;
+        padding: 15px;
+        text-align: center;
+        color: darkslategray;
+        height: 50px;
+        margin-top: 0;
+    }
+    
+    .redsoc {
+        color: white;
+        padding: 5px;
+    }
+    
+    .redsoc:hover {
+        color: darkslategray;
+    }
+    /*--------------------Animaciones - Feelings -------------------------*/
+    
+    .flip-card {
+        background-color: transparent;
+        width: 250px;
+        height: 200px;
+        perspective: 1000px;
+        padding: 0;
+        margin: 10px;
+    }
+    
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+        background-color: white;
+    }
+    
+    .flip-card-back {
+        background-color: steelblue;
+        color: white;
+        transform: rotateY(180deg);
+        padding: 10px;
+    }
+    
+    .textcard {
+        margin-top: 15%;
+    }
+    /*--------------------Formulario-------------------------*/
+    
+    label,
+    input {
+        font-size: 1.5vw;
+    }
+    
+    .namecontact {
+        text-align: center;
+        font-size: 2em;
+        margin: 10px;
+    }
+    
+    .reg {
+        text-align: center;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    
+    form {
+        width: 65%;
+        padding: 10px;
+        margin: 1vw;
+        display: inline-block;
+        border: 2px dotted grey;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=url],
+    select {
+        width: 75%;
+        padding: 10px 20px;
+        margin: 1vw;
+        display: inline-block;
+        border: 1px solid white;
+        border-radius: 5px;
+        border-color: rgb(219, 166, 166);
+        box-sizing: border-box;
+        resize: vertical;
+    }
+    
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+    
+    input[type=submit] {
+        width: 50%;
+        background-color: rgb(78, 247, 78);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #45a049;
+        animation-name: example;
+        animation-duration: 0.4s;
+    }
+    
+    #pwd {
+        margin-left: -6px;
+        align: right;
+    }
+    
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+    
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+    
+    .genero {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+        margin-left: 15%;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /*--------------------Mobile - Desktop-------------------------*/
+    
+    @keyframes example {
+        from {
+            background-color: rgb(78, 247, 78);
+        }
+        to {
+            background-color: #45a049;
+        }
+    }
+    
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+        form {
+            width: 100%;
+        }
+        .col-25 {
+            width: 100%;
+            float: left;
+            margin-top: 6px;
+            margin-left: 45%;
+        }
+        .col-75 {
+            width: 100%;
+            margin-top: 6px;
+            margin-left: 20%;
+        }
+        .row {
+            width: 100%;
+        }
+        label {
+            width: 100%;
+            font-size: 2vmax;
+        }
+        .genero {
+            width: 75%;
+        }
+        #pwd {
+            width: 75%;
+            margin-left: 1vmax;
+        }
+        .container {
+            width: 100%;
+            margin-left: 15%;
+            padding: 5px 25px;
+        }
+        .col-s-12 {
+            width: 100%;
+            margin-left: 3vmax;
+        }
+        .redsoc {
+            width: 100%;
+            margin-bottom: 1vmax;
+            padding-bottom: 0;
+        }
+        footer {
+            width: 100%;
+        }
+        body {
+            width: 100%;
+        }
+        header {
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid #ddd;
+        }
+        td.yellow,
+        td.green,
+        td.red,
+        td.blue,
+        td.green,
+        td.purple,
+        td.orange {
+            width: 50%;
+            padding: 10px;
+            display: inline-block;
+        }
+        tr {
+            width: 100%;
+            padding: 10px;
+            display: inline-block;
+        }
+        .red,
+        .yellow,
+        .green,
+        .blue,
+        .purple,
+        .orange {
+            width: 100%;
+        }
+        .table-feelings {
+            width: 100%;
+        }
+        .flip-card-inner,
+        .flip-card-back,
+        .flip-card-front {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (min-width: 600px) {
+        /* For tablets: */
+        .col-s-1 {
+            width: 8.33%;
+        }
+        .col-s-2 {
+            width: 16.66%;
+        }
+        .col-s-3 {
+            width: 25%;
+        }
+        .col-s-4 {
+            width: 33.33%;
+        }
+        .col-s-5 {
+            width: 41.66%;
+        }
+        .col-s-6 {
+            width: 50%;
+        }
+        .col-s-7 {
+            width: 58.33%;
+        }
+        .col-s-8 {
+            width: 66.66%;
+        }
+        .col-s-9 {
+            width: 75%;
+        }
+        .col-s-10 {
+            width: 83.33%;
+        }
+        .col-s-11 {
+            width: 91.66%;
+        }
+        .col-s-12 {
+            width: 100%;
+        }
+        .col-s-25 {
+            width: 100%;
+        }
+        .col-s-75 {
+            width: 100%;
+        }
+        #pwd {
+            width: 100%;
+            margin-left: 1vmax;
+        }
+    }
+    
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {
+            width: 8.33%;
+        }
+        .col-2 {
+            width: 16.66%;
+        }
+        .col-3 {
+            width: 25%;
+        }
+        .col-4 {
+            width: 33.33%;
+        }
+        .col-5 {
+            width: 41.66%;
+        }
+        .col-6 {
+            width: 50%;
+        }
+        .col-7 {
+            width: 58.33%;
+        }
+        .col-8 {
+            width: 66.66%;
+        }
+        .col-9 {
+            width: 75%;
+        }
+        #pwd {
+            width: 75%;
+            margin-left: 1vmax;
+        }
+        .genero {
+            width: 100%;
+            margin-left: 1vmax;
+            display: inline-block;
+        }
+        input[type=radio] {
+            width: 100%;
+            margin-left: 1vmax;
+        }
+        .col-10 {
+            width: 83.33%;
+        }
+        form {
+            width: 85%;
+        }
+        .col-s-25 {
+            width: 85%;
+            font-size: 2vmax;
+        }
+        .col-s-75 {
+            width: 85%;
+        }
+        .row {
+            width: 100%;
+        }
+        label {
+            width: 85%;
+            font-size: 1.5vmax;
+            margin-left: 40px;
+        }
+        .col-11 {
+            width: 91.66%;
+        }
+        .col-12 {
+            width: 100%;
+        }
+        .container {
+            width: 100%;
+        }
+        body {
+            width: 100%;
+        }
+    }
